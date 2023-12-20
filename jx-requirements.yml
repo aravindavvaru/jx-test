@@ -19,8 +19,10 @@ spec:
   - key: staging
   - key: production
   ingress:
-    domain: ""
-    externalDNS: false
+    customHosts:
+     hook: "https://6d52-79-140-117-194.ngrok-free.app"
+    domain: 192.168.64.7.nip.io
+    kind: ingress
     namespaceSubDomain: -jx.
     tls:
       email: ""
