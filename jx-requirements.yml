@@ -16,11 +16,11 @@ spec:
     provider: minikube
   environments:
   - key: dev
+    owner: aravindavvaru
+    repository: jx-test
   - key: staging
   - key: production
   ingress:
-    customHosts:
-     hook: "https://6d52-79-140-117-194.ngrok-free.app"
     domain: 192.168.64.7.nip.io
     kind: ingress
     namespaceSubDomain: -jx.
@@ -28,6 +28,8 @@ spec:
       email: ""
       enabled: false
       production: false
+  pipelineUser:
+    username: aravindavvaru
   repository: bucketrepo
   secretStorage: local
   vault: {}
